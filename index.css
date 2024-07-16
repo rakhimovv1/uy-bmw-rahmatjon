@@ -1,0 +1,146 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-decoration: none;
+}
+body{
+   background-color: rgb(12, 139, 242);
+}
+
+.container{
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.n-main{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.n-center{
+  display: flex;
+  gap: 30px;
+  a{
+     text-decoration: none;
+     color: black;
+     font-size: 20px;
+  }
+}
+.n-left{
+  width: 50px;
+  img{
+     width: 50px;
+     height: 50px;
+  }
+}
+
+.n-right{
+   font-size: 30px;
+   display: flex;
+   gap: 10px;
+}
+
+.mob svg{
+  color: white;
+
+}
+.mob{
+  display: none;
+}
+
+@media (max-width:800px) {
+  .mob{
+     display: block;
+  }
+  .n-center{
+     display: none;
+  }
+ 
+}
+.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(12, 139, 242);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  a{
+     font-size: 22px;
+  }
+}
+
+.mob-active{
+  position: relative;
+  z-index: 100;
+}
+
+.hidden{
+  overflow-y: hidden;
+}
+
+.logo img{
+   width: 200px;
+}
+.models{
+   display: flex;
+   gap: 30px;
+   a{
+       color: white;
+       font-size: 16px;
+       
+   }
+}
+
+.btns{
+   display: flex;
+   gap: 30px;
+   button{
+       border: none;
+       font-size: 16px;
+       background: none;
+       font-weight: 600;
+       cursor: pointer;
+   }
+}
+
+ .header{
+    width: 100%;
+    height: 100vh;
+   background: url(https://www.bmw.com/content/dam/bmw/common/all-models/x-series/x5/2023/highlights/bmw-x-series-x5-sp-desktop.jpg) 
+   no-repeat center center/cover;
+   text-align: center;
+   padding-top: 150px;
+
+ }
+
+ .section{
+    width: 100%;
+    height: 100vh;
+   background: url(https://www.bmw.ie/content/dam/bmw/common/all-models/m-series/x6m/2023/highlights/bmw-m-series-x6-m-gallery-image-impressionen-03_890.jpg) 
+   no-repeat center center/cover;
+   text-align: center;
+   padding-top: 150px;
+
+ }
+
+ .aside{
+   width: 100%;
+   height: 100vh;
+   background: url(https://www.bmw.in/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x-series-x7-cp-driving-dynamics-desktop.jpg) 
+   no-repeat center center/cover;
+   text-align: center;
+   padding-top: 150px;
+
+ }
+
+
